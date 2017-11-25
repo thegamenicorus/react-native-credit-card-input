@@ -149,7 +149,7 @@ const s = StyleSheet.create({
             <ImageBackground
               style={[s.icon]}
               source={Icons[brand]}
-              resizeMethod="contain"
+              resizeMode="contain"
             />
             <Text
               style={[

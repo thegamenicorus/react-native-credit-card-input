@@ -175,7 +175,7 @@ const s = StyleSheet.create({
           <Image
             style={s.icon}
             source={Icons[this._iconToShow()]}
-            resizeMethod="contain"
+            resizeMode="contain"
           />
         </TouchableOpacity>
         <View style={[s.rightPart, showRightPart ? s.expanded : s.hidden]}>
