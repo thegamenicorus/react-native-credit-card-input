@@ -21,8 +21,7 @@ const s = StyleSheet.create({
     top: 15,
     right: 15,
     width: 60,
-    height: 40,
-    resizeMode: "contain"
+    height: 40
   },
   baseText: {
     color: "rgba(255, 255, 255, 0.8)",
@@ -147,7 +146,11 @@ const s = StyleSheet.create({
             style={[BASE_SIZE, s.cardFace, transform]}
             source={imageFront}
           >
-            <ImageBackground style={[s.icon]} source={Icons[brand]} />
+            <ImageBackground
+              style={[s.icon]}
+              source={Icons[brand]}
+              resizeMethod="contain"
+            />
             <Text
               style={[
                 s.baseText,
